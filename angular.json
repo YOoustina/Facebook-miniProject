@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FacebookTask"
+    }
+  },
+  "defaultProject": "FacebookTask",
+  "cli": {
+    "analytics": "47dff8db-d3f7-49a2-8e0d-29daaf80a881"
+  }
 }
