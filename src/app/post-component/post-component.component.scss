@@ -1,130 +1,173 @@
-
-.clickable{
-  &:hover{cursor: pointer;}
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.maxRight {
+  display: flex;
+  margin-left: auto;
+  font-size: 2rem;
+  color: #5B626A;
 }
 .postContainer {
-    display: block;
-    margin: auto;
-    background-color: white;
-    // width: 80%;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0rem 0rem 0.7rem -0.3rem grey;
-    min-height: 7rem;
-  }
-  .postContent {
-    margin: 1rem 0;
-    font-size: 2rem;
-    color: black;
-  }
-  .mediaPost{
-    width: 99%;
-    height: auto;
-    margin: 2rem 0;
+  display: block;
+  margin: auto;
+  background-color: white;
+  // width: 80%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.7rem -0.3rem grey;
+  min-height: 7rem;
+}
+.postContent {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: black;
+}
+.mediaPost {
+  width: 99%;
+  height: auto;
+  margin: 2rem 0;
+}
 
-  }  
- 
-  .posterImg {
-    // display: block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    float: left;
-    &:hover {
-      cursor: pointer;
-    }
-  
+.posterImg {
+  // display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  float: left;
+  &:hover {
+    cursor: pointer;
   }
-  .posterDetails {
-    margin-left: 5rem;
+}
+.posterDetails {
+  margin-left: 5rem;
+}
+.posterName {
+  display: inline;
+  // margin: 0px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
-  .posterName {
-    display: inline;
-    // margin: 0px;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-  }
-  .postTime {
-    display: flex;
-    align-items: center;
-  }
-  
-  .privacy {
-    font-size: 1.5rem;
-    color: gray;
-  }
-  
-  .reactive {
-    display: flex;
-    align-items: center;
-  }
-  .center {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #65676b;
-  }
-  .reactions{
-    width: 33%;
-    height: 4rem;
-    border-radius: 4rem;
-    background-color: red;
-    display:none;
-  }
-  .reacts:hover  .reactions{
+}
+.postTime {
+  display: flex;
+  align-items: center;
+}
+
+.privacy {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.reactive {
+  display: flex;
+  align-items: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #65676b;
+}
+.reactions {
+  width: 33%;
+  height: 4rem;
+  border-radius: 4rem;
+  background-color: red;
+  display: none;
+}
+.reacts:hover .reactions {
   background-color: #1877f2;
   display: inline;
+}
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.moreComment {
+  color: #65676b;
+  font-size: 1.7rem;
+  // font-weight: bold;
+  margin-bottom: 1rem;
+}
+.reactIcon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  &:hover {
+    cursor: pointer;
   }
-  hr {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+}
+.oneCommentContainer {
+  margin-bottom: 1rem;
+}
+.oneComment {
+  background-color: #f0f2f5;
+  border-radius: 2rem;
+  width: 60%;
+  padding-bottom: 1rem;
+  color: black;
+}
+.commenter {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.replayContainer {
+  margin-left: 6rem;
+  font-weight: bold;
+  color: #65676b;
+  font-size: 1.2rem;
+  .commentTime {
+    font-weight: lighter;
   }
-  .moreComment {
-    color: #65676b;
-    font-size: 1.7rem;
-    // font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  .reactIcon {
-    font-size: 2rem;
-    margin-right: 1rem;
-    &:hover{
-      cursor: pointer;
-    }
-  }
-  .oneCommentContainer {
-    margin-bottom: 1rem;
-  }
-  .oneComment {
-    background-color: #f0f2f5;
-    border-radius: 2rem;
-    width: 60%;
-    padding-bottom: 1rem;
-    color: black;
-  }
-  .commenter {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-  }
-  .replayContainer {
-    margin-left: 6rem;
-    font-weight: bold;
-    color: #65676b;
-    font-size: 1.2rem;
-    .commentTime {
-      font-weight: lighter;
-    }
-  }
-  
-  .newCommentInput {
-    border: 0px;
-    background-color: #f0f2f5;
-    width: 60%;
-    min-height: 4.5rem;
-    border-radius: 2rem;
-    margin-left: 1.5rem;
-  }
+}
+
+.newCommentInput {
+  border: 0px;
+  background-color: #f0f2f5;
+  width: 60%;
+  min-height: 4.5rem;
+  border-radius: 2rem;
+  margin-left: 1.5rem;
+}
+input.newCommentInput {
+  font-family: FontAwesome;
+  font-family: "Tahoma";
+
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+.reactionsTooltip{
+
+visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  // padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+
+  width: 45rem;
+height: 4rem;
+background-color: red;
+border-radius: 2rem;
+bottom: 3rem;
+left: -14rem;
+}
+.likeReact{
+  position: relative;
+}
+.likeReact:hover .reactionsTooltip {
+  visibility: visible;
+}
+.active{
+  color: #1877f2;
+}

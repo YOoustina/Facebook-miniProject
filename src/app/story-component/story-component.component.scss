@@ -13,23 +13,87 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #65676b;
   }
   .storyPP{
     width: 4rem;
     height: 4rem;
     background-color: chartreuse;
     border-radius: 50%;
-    border: 3px solid #1877f2 ;
-  display: flex;
+    border: .4rem solid #1877f2 ;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  // display: flex;
 //   margin-top:2rem;
 //   margin-left:2rem;
 
   
   }
+  .testt{
+    margin-top: 1rem;
+  }
+  .myStoryPP {
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+  
+    margin-top: 80%;
+    background-color: #1877f2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slide {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem .8rem -0.3rem grey;
+    background-color: white;
+    font-family: FontAwesome;
+  
+  // border: .01rem solid #929396;
+    z-index: 2;
+    position: relative;
+    margin-right: 0;
+    display: flex;
+    margin: auto;
+    position: absolute;
+  
+    right:3rem;
+    z-index: 10;
+  }
+  .float{
+    top: 14rem;
+  }
+  .maxRight {
+    display: flex;
+    margin-left: auto;
+  }
+  .myStoryName {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 4rem;
+  }
   .storyName{
     color: white;
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
     display: table-caption;
-    margin-top: 14rem;
-    margin-left: 2rem;
+    font-family: 'Tahoma';
     
   }  
+  .myPic {
+    background-color: #65676b;
+    background-image: url(../assets/hand.jpg);
+  }

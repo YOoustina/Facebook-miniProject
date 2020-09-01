@@ -3,13 +3,33 @@ html {
   background-color: #f0f2f5;
   scroll-behavior: smooth;
 }
-
+.cont{
+  transform: scale(.7);
+}
+app-header-component{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
 .clickable {
   &:hover {
     cursor: pointer;
   }
 }
-
+app-sidebar-component{
+  position: fixed;
+  // top: 5rem;
+  width: 100vw;
+  margin-top: 7rem;
+}
+// html * {
+// font-family: 'Tahoma';
+// }
+// .specialContainer{
+//  width: 90%;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 ///////////////////////post/////////////////@at-root
 
 .postContainer {
@@ -94,7 +114,10 @@ hr {
 }
 .reactIcon {
   font-size: 2rem;
-  margin-right: 1rem;
+  // margin-right: 1rem;
+  width: 3.5rem;
+    height: 3.5rem;
+    margin-right: .5rem;
   &:hover {
     cursor: pointer;
   }
@@ -142,6 +165,9 @@ hr {
 .float{
   top: 14rem;
 }
+.testt{
+  margin-top: 1rem;
+}
 
 .rooms {
   display: flex;
@@ -166,10 +192,14 @@ hr {
   position: relative;
 }
 .slide {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
-  background-color: #65676b;
+  box-shadow: 0rem 0rem .8rem -0.3rem grey;
+  background-color: white;
+  font-family: FontAwesome;
+
+// border: .01rem solid #929396;
   z-index: 2;
   position: relative;
   margin-right: 0;

@@ -1,45 +1,48 @@
 
 <div class="container">
-    <div class="postContainer">
-      <div><img class="posterImg" src="../assets/FB logo.png" alt="" /></div>
+    <div class="postContainer" *ngFor="let post of arrayOfPosts">
+      <div><img class="posterImg" [src]="post.userPic" alt="" /></div>
       <div class="posterDetails">
-        <h2 class="posterName">Engy Samy</h2>
+        <h2 class="posterName">{{post.userFirstName}} {{post.userLastName}}</h2>
         <div class="postTime clickable">
           34m .
           <span class="material-icons privacy">
             public
           </span>
-          <span
-            class="maxRight clickable"
-            style="color: black; font-size: 2rem;"
-            >...</span
-          >
+          <i class="far fa-ellipsis-h maxRight clickable"></i>
         </div>
       </div>
-      <div class="postContent">Our Day LOoooove</div>
+      <div class="postContent">{{post.content}}</div>
 
       <!-- ////////if ther is img ////// -->
-      <div >
-        <img class="mediaPost center" src="../../assets/dorra.jpg" alt="">
-      </div>
+      <ng-templet *ngIf="post.imgUrl">
+        <img class="mediaPost center" [src]="post.imgUrl" alt="">
+      </ng-templet>
+
+      <!-- <div *ngIf="post.imgUrl" >
+        <img class="mediaPost center" [src]="post.imgurl" alt="">
+
+      </div> -->
 
       <!-- /////////if there is video///// -->
-      <div>
-        <video class="mediaPost center" controls >
-          <source src="../../assets/Dubstep Bird (Original 5 Sec Video).mp4" type="video/mp4">
-            <source src="../../assets/Dubstep Bird (Original 5 Sec Video).ogg" type="video/ogg">
+      <ng-templet *ngIf="post.videoUrl">
+        <video class="mediaPost center" controls  >
+          <source [src]="post.videoUrlMp4" type="video/mp4">
+            <source [src]="post.videoUrlOgg" type="video/ogg">
             Your browser does not support the video tag.
+           
         </video>
-      </div>
+      </ng-templet>
 
       <hr />
 
-<!-- <div class="postContent">
-<div class="reactions"></div>
-</div> -->
       <div class="reactive">
-        <div class="center reacts" >
-          <i class="fal fa-thumbs-up reactIcon"></i>
+        <div class="center reacts likeReact"  >
+         <!-- <ng-templet *ngIf="post.isLiked">
+           <i class="fas fa-thumbs-up reactIcon active"></i>
+         </ng-templet> -->
+          <i class="fal fa-thumbs-up reactIcon " (click)="boolenLike()" [ngClass]="status ? 'active' : ''" ></i>
+          <span class="reactionsTooltip">Reacts</span>
           <span>Like</span>
         </div>
         <div class="center">
@@ -59,10 +62,11 @@
       </div>
       <div class="commentArea">
         
-          <app-comment-component></app-comment-component>
-          <app-comment-component></app-comment-component>
+          <app-comment-component [comments]="post.comments" ></app-comment-component>
       
-       
+          <div>
+            <h2 class="moreComment clickable">view  more Comments</h2>
+          </div>
         <div class="oneCommentContainer">
           <div>
             <img class="posterImg" src="../assets/FB logo.png" alt="" />
@@ -71,8 +75,10 @@
           <input
             class="newCommentInput"
             type="text"
-            placeholder="   Write a comment ..."
+            placeholder="   Write a comment ...  "
+            
           />
+          <!-- &#9786; -->
         </div>
       </div>
     </div>

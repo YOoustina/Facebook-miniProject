@@ -11,12 +11,14 @@ import { NewPostComponentComponent } from './new-post-component/new-post-compone
 import { StoryComponentComponent } from './story-component/story-component.component';
 import { OnlineRoomComponentComponent } from './online-room-component/online-room-component.component';
 import { CommentComponentComponent } from './comment-component/comment-component.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SidebarComponentComponent } from './sidebar-component/sidebar-component.component';
 
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, PostComponentComponent, PostListingComponentComponent, HeaderComponentComponent, NewPostComponentComponent, StoryComponentComponent, OnlineRoomComponentComponent, CommentComponentComponent],
-  imports: [BrowserModule, MaterialModule, AppRoutingModule],
+  declarations: [AppComponent, PostComponentComponent, PostListingComponentComponent, HeaderComponentComponent, NewPostComponentComponent, StoryComponentComponent, OnlineRoomComponentComponent, CommentComponentComponent, SidebarComponentComponent],
+  imports: [BrowserModule, MaterialModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-   <app-header-component></app-header-component>
 
+   <app-header-component></app-header-component>
+<app-sidebar-component></app-sidebar-component>
+<div class="cont"> 
     <!-- ///////////////Stories///////////////// -->
-    <div class="container">
+    <div class="container ">
       <div class="storyContainer floating ">
         <!-- ////my story ////// -->
         <div class="storyCard myPic">
           <div  class="storyPP myStoryPP clickable">
-            <i class="fal fa-thumbs-up center " style="color:white;"></i>
       
+            <i class="far fa-plus testt" style="color:white;"></i>
           </div>
          
           <div class="storyName myStoryName ">Creat a Story</div>
@@ -40,7 +24,9 @@
    
    
             <div class="slide maxRight clickable float">
-              <i class="fal fa-thumbs-up center " style="color: white;"></i>
+            <i class="far fa-chevron-right center" style="color: #65676b;"></i>
+
+              
             </div>
       </div>
     </div>
@@ -48,11 +34,17 @@
     <!-- /////////////////////Write New Post/////////// -->
 <app-new-post-component></app-new-post-component>
     <!-- //////////////////Rooms////////////// -->
+   
+    
     <div class="container">
       <div class="postContainer floating">
         <div class="center" style="color: black;">
-          <span class="material-icons privacy"> public </span
-          ><span class="specialWord">Rooms </span> . video chat with friends
+          <!-- <span class="material-icons privacy"> public </span> -->
+          <div >
+
+            <img class="reactIcon" src="../assets/room.png" alt="">
+          </div>
+          <span class="specialWord">Rooms </span> . video chat with friends
           <span class="maxRight clickable" style="color: #1877f2;"
             >Creat Room</span
           >
@@ -79,12 +71,12 @@
       <app-online-room-component></app-online-room-component>
          
           <div class="slide maxRight clickable">
-            <i class="fal fa-thumbs-up center" style="color: white;"></i>
+            <i class="far fa-chevron-right center" style="color: #65676b;"></i>
           </div>
         </div>
       </div>
     </div>
+ 
     <!-- ///////////////post/////////////// -->
 <app-post-listing-component></app-post-listing-component>
-  </body>
-</html>
+</div>

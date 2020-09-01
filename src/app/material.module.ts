@@ -8,8 +8,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
 // import { MatBadgeModule } from '@angular/material/badge';
-import {MatGridListModule} from '@angular/material/grid-list';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
@@ -21,6 +21,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatTooltipModule,
     // MatBadgeModule,
     MatGridListModule,
   ],
@@ -33,6 +34,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatTooltipModule,
     // MatBadgeModule,
     MatGridListModule,
   ],

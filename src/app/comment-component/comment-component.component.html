@@ -1,11 +1,13 @@
-<div class="oneCommentContainer">
-
-<div>
-    <img class="posterImg" src="../assets/FB logo.png" alt="" />
+<div
+  class="oneCommentContainer"
+  *ngFor="let comment of comments; let i = index;"
+>
+  <div>
+    <img class="posterImg" [src]="comment.commenterPic" alt="" />
   </div>
   <div class="posterDetails oneComment">
-    <h2 class="posterName commenter">micheal john</h2>
-    <div class="comment commenter">kan nefsy akoon mawgood</div>
+    <h2 class="posterName commenter">{{ comment.commenterName }}</h2>
+    <div class="comment commenter">{{ comment.Comment }}</div>
   </div>
   <div class="replayContainer">
     <span class="replay">Like . </span>

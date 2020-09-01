@@ -1,0 +1,57 @@
+  [
+    {
+        "postId": "1",
+        "userFirstName":"Ahmed",
+        "userLastName":"youssif",
+        "userPic":"./hand.jpg",
+        "content": "Hello World ^_^",
+        "imgUrl": "",
+        "videoUrl":"",
+        "videoUrlOgg":"",
+        "userId": "1",
+        "isLiked": "false",
+        "comments":[
+            {"commenterName":"Loka Yasser","Comment":"likeee gdn","commenterPic":"./hand.jpg"},
+            {"commenterName":"magy sabry","Comment":"sure ","commenterPic":"./hand.jpg"},
+            {"commenterName":"kamal hanna","Comment":"lol","commenterPic":"./hand.jpg"}
+        ]
+        
+    },
+        {
+        "postId": "2",
+        "userFirstName":"Nora",
+        "userLastName":"Amged",
+
+        "userPic":"./dorra.jpg",
+        "content": "love",
+        "imgUrl": "https://www.w3schools.com/html/img_girl.jpg",
+        "videoUrl":"",
+        "videoUrlOgg":"",
+        "userId": "1",
+        "isLiked": "true",
+        "comments":[
+            {"commenterName":"karla fsdy","Comment":"likeee gdn"}
+          
+            
+        ]
+        
+    },{
+        "postId": "3",
+        "useFirstrName":"Bola",
+        "userLastName":"Nader",
+
+        "userPic":"./hand.jpg",
+        "content": "Video",
+        "imgUrl": "",
+        "videoUrlMp4":"../assets/Dubstep Bird (Original 5 Sec Video).mp4",
+        "videoUrlOgg":"../assets/Dubstep Bird (Original 5 Sec Video).ogg",
+        "userId": "1",
+        "isLiked": "true",
+        "comments":[
+  
+            {"commenterName":"lala nero","Comment":"sure "}
+           
+        ]
+        
+    }
+]
