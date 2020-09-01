@@ -1,0 +1,13 @@
+.posterImg {
+    // display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    float: left;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .roomPic {
+    margin-right: 1.5rem;
+  }

@@ -1,0 +1,80 @@
+<p>
+    <mat-toolbar class="toolbar">
+      <div><img class="FBLogo" src="../assets/FB logo.png" alt="" /></div>
+      <form class="example-form">
+        <input
+          class="searchForm"
+          type="search"
+          placeholder="  &#61442; search facebook"
+          [formControl]="control"
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let street of filteredStreets | async"
+            [value]="street"
+          >
+            {{ street }}
+          </mat-option>
+        </mat-autocomplete>
+      </form>
+      <mat-tab-group>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon
+              class="navIcon"
+              aria-hidden="false"
+              aria-label="Example home icon"
+              >home</mat-icon
+            >
+          </ng-template>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon
+              class="navIcon"
+              aria-hidden="false"
+              aria-label="Example home icon"
+              >home</mat-icon
+            >
+          </ng-template>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon
+              class="navIcon"
+              aria-hidden="false"
+              aria-label="Example home icon"
+              >home</mat-icon
+            >
+          </ng-template>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon
+              class="navIcon"
+              aria-hidden="false"
+              aria-label="Example home icon"
+              >home</mat-icon
+            >
+          </ng-template>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon
+              class="navIcon"
+              aria-hidden="false"
+              aria-label="Example home icon"
+              >public</mat-icon
+            >
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
+
+      <div> <img class="test " src="../assets/42640675_789808834766895_7137361207790403584_n.jpg" alt=""> </div><span class="profileName">Youstina</span>
+      <div class="test">2</div>
+      <div class="test">3</div>
+      <div class="test">4</div>
+      <div class="test">5</div>
+    </mat-toolbar>
+  </p>

@@ -1,0 +1,35 @@
+.clickable{
+    &:hover{cursor: pointer;}
+  }
+.storyCard{
+    width: 15rem;
+    height: 25rem;
+    background-color:red ;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    background-image: url(../../assets/dorra.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .storyPP{
+    width: 4rem;
+    height: 4rem;
+    background-color: chartreuse;
+    border-radius: 50%;
+    border: 3px solid #1877f2 ;
+  display: flex;
+//   margin-top:2rem;
+//   margin-left:2rem;
+
+  
+  }
+  .storyName{
+    color: white;
+    display: table-caption;
+    margin-top: 14rem;
+    margin-left: 2rem;
+    
+  }  

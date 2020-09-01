@@ -1,0 +1,45 @@
+.posterImg {
+    // display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    float: left;
+    &:hover {
+      cursor: pointer;
+    }
+  
+  }
+  .posterDetails {
+    margin-left: 5rem;
+  }
+  .posterName {
+    display: inline;
+    // margin: 0px;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .oneComment {
+    background-color: #f0f2f5;
+    border-radius: 2rem;
+    width: 60%;
+    padding-bottom: 1rem;
+    color: black;
+  }
+  .commenter {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .replayContainer {
+    margin-left: 6rem;
+    font-weight: bold;
+    color: #65676b;
+    font-size: 1.2rem;
+    .commentTime {
+      font-weight: lighter;
+    }
+  }
+  .oneCommentContainer {
+    margin-bottom: 1rem;
+  }

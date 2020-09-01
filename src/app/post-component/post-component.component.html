@@ -1,1 +1,79 @@
-<p>post-component works!</p>
+
+<div class="container">
+    <div class="postContainer">
+      <div><img class="posterImg" src="../assets/FB logo.png" alt="" /></div>
+      <div class="posterDetails">
+        <h2 class="posterName">Engy Samy</h2>
+        <div class="postTime clickable">
+          34m .
+          <span class="material-icons privacy">
+            public
+          </span>
+          <span
+            class="maxRight clickable"
+            style="color: black; font-size: 2rem;"
+            >...</span
+          >
+        </div>
+      </div>
+      <div class="postContent">Our Day LOoooove</div>
+
+      <!-- ////////if ther is img ////// -->
+      <div >
+        <img class="mediaPost center" src="../../assets/dorra.jpg" alt="">
+      </div>
+
+      <!-- /////////if there is video///// -->
+      <div>
+        <video class="mediaPost center" controls >
+          <source src="../../assets/Dubstep Bird (Original 5 Sec Video).mp4" type="video/mp4">
+            <source src="../../assets/Dubstep Bird (Original 5 Sec Video).ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <hr />
+
+<!-- <div class="postContent">
+<div class="reactions"></div>
+</div> -->
+      <div class="reactive">
+        <div class="center reacts" >
+          <i class="fal fa-thumbs-up reactIcon"></i>
+          <span>Like</span>
+        </div>
+        <div class="center">
+          <i class="far fa-comment-alt reactIcon"></i>
+          <span>comment</span>
+        </div>
+        <div class="center">
+          <i class="fal fa-share reactIcon"></i>
+          <span>share</span>
+        </div>
+      </div>
+      <hr />
+
+
+      <div>
+        <h2 class="moreComment clickable">view 5 more Comments</h2>
+      </div>
+      <div class="commentArea">
+        
+          <app-comment-component></app-comment-component>
+          <app-comment-component></app-comment-component>
+      
+       
+        <div class="oneCommentContainer">
+          <div>
+            <img class="posterImg" src="../assets/FB logo.png" alt="" />
+          </div>
+
+          <input
+            class="newCommentInput"
+            type="text"
+            placeholder="   Write a comment ..."
+          />
+        </div>
+      </div>
+    </div>
+  </div>

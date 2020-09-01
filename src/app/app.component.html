@@ -16,90 +16,11 @@
     />
   </head>
   <body>
-    <p>
-      <mat-toolbar class="toolbar">
-        <div><img class="FBLogo" src="../assets/FB logo.png" alt="" /></div>
-        <form class="example-form">
-          <input
-            class="searchForm"
-            type="search"
-            placeholder="  &#61442; search facebook"
-            [formControl]="control"
-            [matAutocomplete]="auto"
-          />
-          <mat-autocomplete #auto="matAutocomplete">
-            <mat-option
-              *ngFor="let street of filteredStreets | async"
-              [value]="street"
-            >
-              {{ street }}
-            </mat-option>
-          </mat-autocomplete>
-        </form>
-        <mat-tab-group>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon
-                class="navIcon"
-                aria-hidden="false"
-                aria-label="Example home icon"
-                >home</mat-icon
-              >
-            </ng-template>
-          </mat-tab>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon
-                class="navIcon"
-                aria-hidden="false"
-                aria-label="Example home icon"
-                >home</mat-icon
-              >
-            </ng-template>
-          </mat-tab>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon
-                class="navIcon"
-                aria-hidden="false"
-                aria-label="Example home icon"
-                >home</mat-icon
-              >
-            </ng-template>
-          </mat-tab>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon
-                class="navIcon"
-                aria-hidden="false"
-                aria-label="Example home icon"
-                >home</mat-icon
-              >
-            </ng-template>
-          </mat-tab>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon
-                class="navIcon"
-                aria-hidden="false"
-                aria-label="Example home icon"
-                >public</mat-icon
-              >
-            </ng-template>
-          </mat-tab>
-        </mat-tab-group>
-
-        <div> <img class="test " src="../assets/42640675_789808834766895_7137361207790403584_n.jpg" alt=""> </div><span class="profileName">Youstina</span>
-        <div class="test">2</div>
-        <div class="test">3</div>
-        <div class="test">4</div>
-        <div class="test">5</div>
-      </mat-toolbar>
-    </p>
+   <app-header-component></app-header-component>
 
     <!-- ///////////////Stories///////////////// -->
     <div class="container">
-      <div class="storyContainer ">
+      <div class="storyContainer floating ">
         <!-- ////my story ////// -->
         <div class="storyCard myPic">
           <div  class="storyPP myStoryPP clickable">
@@ -110,102 +31,25 @@
           <div class="storyName myStoryName ">Creat a Story</div>
         </div>
         <!-- ////////Other stories////// -->
-        <div class="storyCard">
-          <div>
-            <img
-            class="storyPP clickable"
-            src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-            alt=""
-            />
-          </div>
-          <div class="storyName ">Marina Magdy</div>
-        </div>
-        <div class="storyCard">
-          <div>
-            <img
-            class="storyPP clickable"
-            src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-            alt=""
-            />
-          </div>
-          <div class="storyName ">Marina Magdy</div>
-        </div>
-        <div class="storyCard">
-          <div>
-            <img
-            class="storyPP clickable"
-            src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-            alt=""
-            />
-          </div>
-          <div class="storyName ">Marina Magdy</div>
-        </div>
-        <div class="storyCard">
-          <div>
-            <img
-            class="storyPP clickable"
-            src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-            alt=""
-            />
-          </div>
-          <div class="storyName ">Marina Magdy</div>
-        </div>  
-        <div class="storyCard">
-          <div>
-            <img
-            class="storyPP clickable"
-            src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-            alt=""
-            />
-          </div>
-          <div class="storyName ">Marina Magdy</div>
-        </div>   
-        <div class="storyCard">
-          <div>
-            <img
-            class="storyPP clickable"
-            src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-            alt=""
-            />
-          </div>
-          <div class="storyName ">Marina Magdy</div>
-        </div>
-            <div class="slide maxRight clickable">
+    <app-story-component></app-story-component>
+    <app-story-component></app-story-component>
+    <app-story-component></app-story-component>
+    <app-story-component></app-story-component>
+    <app-story-component></app-story-component>
+    
+   
+   
+            <div class="slide maxRight clickable float">
               <i class="fal fa-thumbs-up center " style="color: white;"></i>
             </div>
       </div>
     </div>
 
     <!-- /////////////////////Write New Post/////////// -->
-    <div class="container">
-      <div class="postContainer">
-        <div><img class="posterImg" src="../assets/FB logo.png" alt="" /></div>
-        <input
-          style="width: 95%;"
-          class="newCommentInput"
-          type="text"
-          placeholder="   What Is in your mind,Youstina?"
-        />
-        <hr />
-        <div class="reactive">
-          <div class="center">
-            <i class="fal fa-thumbs-up reactIcon"></i>
-            <span>Live Video</span>
-          </div>
-          <div class="center">
-            <i class="far fa-comment-alt reactIcon"></i>
-            <span>Photo/Video</span>
-          </div>
-          <div class="center">
-            <i class="fal fa-share reactIcon"></i>
-            <span>Feeling/Activity</span>
-          </div>
-        </div>
-      </div>
-    </div>
+<app-new-post-component></app-new-post-component>
     <!-- //////////////////Rooms////////////// -->
     <div class="container">
-      <div class="postContainer">
+      <div class="postContainer floating">
         <div class="center" style="color: black;">
           <span class="material-icons privacy"> public </span
           ><span class="specialWord">Rooms </span> . video chat with friends
@@ -214,140 +58,26 @@
           >
         </div>
         <div class="rooms">
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="posterImg roomPic"
-              src="../assets/42640675_789808834766895_7137361207790403584_n.jpg"
-              alt=""
-            />
-          </div>
-
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+      <app-online-room-component></app-online-room-component>
+         
           <div class="slide maxRight clickable">
             <i class="fal fa-thumbs-up center" style="color: white;"></i>
           </div>
@@ -355,93 +85,6 @@
       </div>
     </div>
     <!-- ///////////////post/////////////// -->
-
-    <div class="container">
-      <div class="postContainer">
-        <div><img class="posterImg" src="../assets/FB logo.png" alt="" /></div>
-        <div class="posterDetails">
-          <h2 class="posterName">Engy Samy</h2>
-          <div class="postTime clickable">
-            34m .
-            <span class="material-icons privacy">
-              public
-            </span>
-            <span
-              class="maxRight clickable"
-              style="color: black; font-size: 2rem;"
-              >...</span
-            >
-          </div>
-        </div>
-        <div class="postContent">Our Day LOoooove</div>
-        <hr />
-  
-  <!-- <div class="postContent">
-  <div class="reactions"></div>
-  </div> -->
-        <div class="reactive">
-          <div class="center reacts" >
-            <i class="fal fa-thumbs-up reactIcon"></i>
-            <span>Like</span>
-          </div>
-          <div class="center">
-            <i class="far fa-comment-alt reactIcon"></i>
-            <span>comment</span>
-          </div>
-          <div class="center">
-            <i class="fal fa-share reactIcon"></i>
-            <span>share</span>
-          </div>
-        </div>
-        <hr />
-  
-  
-        <div>
-          <h2 class="moreComment">view 5 more Comments</h2>
-        </div>
-        <div class="commentArea">
-          <div class="oneCommentContainer">
-            <div>
-              <img class="posterImg" src="../assets/FB logo.png" alt="" />
-            </div>
-            <div class="posterDetails oneComment">
-              <h2 class="posterName commenter">micheal john</h2>
-              <div class="comment commenter">kan nefsy akoon mawgood</div>
-            </div>
-            <div class="replayContainer">
-              <span class="replay">Like . </span>
-              <span class="replay">Replay . </span>
-              <span class="replay commentTime">2h</span>
-            </div>
-          </div>
-          <div class="oneCommentContainer">
-            <div>
-              <img class="posterImg" src="../assets/FB logo.png" alt="" />
-            </div>
-            <div class="posterDetails oneComment">
-              <h2 class="posterName commenter">micheal john</h2>
-              <div class="comment commenter">kan nefsy akoon mawgood</div>
-            </div>
-            <div class="replayContainer">
-              <span class="replay">Like . </span>
-              <span class="replay">Replay . </span>
-              <span class="replay commentTime">2h</span>
-            </div>
-          </div>
-         
-          <div class="oneCommentContainer">
-            <div>
-              <img class="posterImg" src="../assets/FB logo.png" alt="" />
-            </div>
-  
-            <input
-              class="newCommentInput"
-              type="text"
-              placeholder="   Write a comment ..."
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+<app-post-listing-component></app-post-listing-component>
   </body>
 </html>

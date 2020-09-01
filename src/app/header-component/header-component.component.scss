@@ -1,0 +1,68 @@
+
+  
+  
+  .clickable{
+    &:hover{cursor: pointer;}
+  }
+  mat-toolbar {
+    background-color: white;
+    border: 0 0 1px 0;
+    box-shadow: 0px 0px 4px -1px grey;
+  }
+.FBLogo {
+    display: block;
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+  }
+  form {
+    background-color: white;
+  }
+  input.searchForm {
+    // background-color: white;
+    ////placeholder Icon///
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: lighter;
+    text-decoration: inherit;
+    /////input border////
+    border-radius: 5rem;
+    background-color: #f0f2f5;
+    border: 0;
+    margin-left: 1rem;
+    width: 25rem;
+  }
+  
+  .navIcon {
+    color: #1877f2;
+    // background-color: white;
+    font-size: 3.5rem;
+  }
+  mat-tab-group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+  
+  ::ng-deep.mat-tab-label,
+  ::ng-deep.mat-tab-label-active {
+    min-width: 0 !important;
+    padding: 0 3.8rem 0 4rem !important;
+    margin: 1rem !important;
+  }
+  
+  .test {
+    background-color: #f0f2f5;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: 0.3rem;
+    text-align: center;
+  }
+  .profileName{
+    margin: 0 2rem 0 1rem;
+  }
+  
+  

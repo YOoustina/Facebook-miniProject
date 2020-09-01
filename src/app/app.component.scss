@@ -4,70 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.clickable{
-  &:hover{cursor: pointer;}
-}
-mat-toolbar {
-  background-color: white;
-  border: 0 0 1px 0;
-  box-shadow: 0px 0px 4px -1px grey;
-}
-
-.FBLogo {
-  display: block;
-  margin: auto;
-  width: 4rem;
-  height: 4rem;
-  background-color: white;
-}
-form {
-  background-color: white;
-}
-input.searchForm {
-  // background-color: white;
-  ////placeholder Icon///
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: lighter;
-  text-decoration: inherit;
-  /////input border////
-  border-radius: 5rem;
-  background-color: #f0f2f5;
-  border: 0;
-  margin-left: 1rem;
-  width: 25rem;
-}
-
-.navIcon {
-  color: #1877f2;
-  // background-color: white;
-  font-size: 3.5rem;
-}
-mat-tab-group {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-}
-
-::ng-deep.mat-tab-label,
-::ng-deep.mat-tab-label-active {
-  min-width: 0 !important;
-  padding: 0 3.8rem 0 4rem !important;
-  margin: 1rem !important;
-}
-
-.test {
-  background-color: #f0f2f5;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  margin: 0.3rem;
-  text-align: center;
-}
-.profileName{
-  margin: 0 2rem 0 1rem;
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 ///////////////////////post/////////////////@at-root
@@ -98,7 +38,6 @@ mat-tab-group {
   &:hover {
     cursor: pointer;
   }
-
 }
 .posterDetails {
   margin-left: 5rem;
@@ -132,16 +71,16 @@ mat-tab-group {
   margin-right: auto;
   color: #65676b;
 }
-.reactions{
+.reactions {
   width: 33%;
   height: 4rem;
   border-radius: 4rem;
   background-color: red;
-  display:none;
+  display: none;
 }
-.reacts:hover  .reactions{
-background-color: #1877f2;
-display: inline;
+.reacts:hover .reactions {
+  background-color: #1877f2;
+  display: inline;
 }
 hr {
   margin-top: 1.5rem;
@@ -156,7 +95,7 @@ hr {
 .reactIcon {
   font-size: 2rem;
   margin-right: 1rem;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
@@ -192,42 +131,40 @@ hr {
   border-radius: 2rem;
   margin-left: 1.5rem;
 }
-
+/////////////////////////////////////////
 .specialWord {
   font-weight: bolder;
 }
-.maxRight{
+.maxRight {
   display: flex;
   margin-left: auto;
-  
-  
 }
-.floating{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+.float{
+  top: 14rem;
 }
+
 .rooms {
   display: flex;
   align-items: center;
   margin-top: 1rem;
   // position: absolute;
-//   overflow: auto;
-//   white-space: nowrap;
-//   div{
-//     display: inline-block;
+  //   overflow: auto;
+  //   white-space: nowrap;
+  //   div{
+  //     display: inline-block;
 
-//   }
-// }::-webkit-scrollbar {
-//   display: none;
-// }
+  //   }
+  // }::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
 
 .roomPic {
   margin-right: 1.5rem;
 }
-
+.floating {
+  position: relative;
+}
 .slide {
   width: 4rem;
   height: 4rem;
@@ -238,12 +175,16 @@ hr {
   margin-right: 0;
   display: flex;
   margin: auto;
+  position: absolute;
+
+  right:3rem;
+  z-index: 10;
 }
 
-.storyCard{
+.storyCard {
   width: 15rem;
   height: 25rem;
-  background-color:red ;
+  background-color: red;
   border-radius: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -253,59 +194,53 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.myPic{
-  background-color:#65676b ;
+.myPic {
+  background-color: #65676b;
   background-image: url(../assets/hand.jpg);
-
 }
-.storyPP{
+.storyPP {
   width: 4rem;
   height: 4rem;
   background-color: chartreuse;
   border-radius: 50%;
   border: 5px;
-display: flex;
-margin-top:2rem;
-margin-left:2rem;
-
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
-.myStoryPP{
-// display: block;
-// margin-left: auto;
-// margin-right: auto;
+.myStoryPP {
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
 
-margin-top: 80%;
-background-color: #1877f2;
-position: relative;
-display: flex;
-align-items: center;
-margin-left: auto;
-margin-right: auto;
-
+  margin-top: 80%;
+  background-color: #1877f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.storyName{
+.storyName {
   color: white;
   display: table-caption;
   margin-top: 14rem;
   margin-left: 2rem;
-  
 }
-.myStoryName{
+.myStoryName {
   display: flex;
   margin-top: 4rem;
   margin-left: 4rem;
-
 }
-.storyContainer{
+.storyContainer {
   display: flex;
-//   overflow: auto;
-//   white-space: nowrap;
-//   div{
-//     display: inline-block;
+  //   overflow: auto;
+  //   white-space: nowrap;
+  //   div{
+  //     display: inline-block;
 
-//   }
-// }::-webkit-scrollbar {
-//   display: none;
-// }
+  //   }
+  // }::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
-
