@@ -1,6 +1,7 @@
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 html {
   background-color: #f0f2f5;
+  scroll-behavior: smooth;
 }
 
 
@@ -131,6 +132,17 @@ mat-tab-group {
   margin-right: auto;
   color: #65676b;
 }
+.reactions{
+  width: 33%;
+  height: 4rem;
+  border-radius: 4rem;
+  background-color: red;
+  display:none;
+}
+.reacts:hover  .reactions{
+background-color: #1877f2;
+display: inline;
+}
 hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -190,12 +202,28 @@ hr {
   
   
 }
+.floating{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
 .rooms {
   display: flex;
   align-items: center;
   margin-top: 1rem;
   // position: absolute;
+//   overflow: auto;
+//   white-space: nowrap;
+//   div{
+//     display: inline-block;
+
+//   }
+// }::-webkit-scrollbar {
+//   display: none;
+// }
 }
+
 .roomPic {
   margin-right: 1.5rem;
 }
@@ -270,4 +298,14 @@ margin-right: auto;
 }
 .storyContainer{
   display: flex;
+//   overflow: auto;
+//   white-space: nowrap;
+//   div{
+//     display: inline-block;
+
+//   }
+// }::-webkit-scrollbar {
+//   display: none;
+// }
 }
+
