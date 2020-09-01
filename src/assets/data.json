@@ -12,7 +12,7 @@
         "isLiked": "false",
         "comments":[
             {"commenterName":"Loka Yasser","Comment":"likeee gdn","commenterPic":"./hand.jpg"},
-            {"commenterName":"magy sabry","Comment":"sure ","commenterPic":"./hand.jpg"},
+            {"commenterName":"magy sabry","Comment":"sure ","commenterPic":"./dorra.jpg"},
             {"commenterName":"kamal hanna","Comment":"lol","commenterPic":"./hand.jpg"}
         ]
         
@@ -30,7 +30,7 @@
         "userId": "1",
         "isLiked": "true",
         "comments":[
-            {"commenterName":"karla fsdy","Comment":"likeee gdn"}
+            {"commenterName":"karla fsdy","Comment":"likeee gdn","commenterPic":"./dorra.jpg"}
           
             
         ]
@@ -49,7 +49,7 @@
         "isLiked": "true",
         "comments":[
   
-            {"commenterName":"lala nero","Comment":"sure "}
+            {"commenterName":"lala nero","Comment":"sure ","commenterPic":"./dorra.jpg"}
            
         ]
         
